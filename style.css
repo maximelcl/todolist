@@ -32,44 +32,62 @@ h1 {
 	font-size: 3em;
 }
 
+ul {
+	list-style: none outside none;
+	font-size: 1.2em;
+}
+
+li {
+	text-decoration: none;
+	transition: all 600ms;
+}
+
+li:hover {
+	text-decoration: line-through;
+}
+
 form {
-	font-size: 1.4em;
+	align-items: center;
 }
 
-.item {
-	width: 100%;
-	height: 4em;
-}
-
-label {
-	width: 95%;
-}
-
-label input {
-	background-color: #F09F89;
+input[type='text'] {
+	font-size: 1.2em;
+	padding: 6px;
+	border-radius: 3px;
 	border: none;
-	border-bottom: 3px solid #E25A57;
-	padding-left: 10px;
-	margin-bottom: 5px;
+	background-color: #F0C1A2;
 }
 
-button {
-	border : none;
+input[type='submit'] {
+	font-size: 1.2em;
+	border: none;
+}
+
+#add-item {
 	background-color: #E25A57;
 	color: white;
 	font-weight: 700;
 	border-radius: 3px;
 	padding: 5px 5px 3px 5px;
 	margin: 3px 5px 3px 5px;
+	box-shadow: 2px 2px 0px 1px #F07269;
 	transition: all 400ms;
 }
 
-button:hover {
+#add-item:hover {
 	opacity: 0.9;
 }
 
-button:active {
-	border: none;
+#add-item:active {
 	opacity: 0.8;
-	box-shadow: 2px 2px 0px 1px #F07269;
+}
+
+#newItemButton {
+	display: none;
+}
+
+#itemField {
+	margin-top: 2em; 
+	width: 70%;
+	align-content: center;
 }
